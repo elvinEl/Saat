@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <title>Document</title>
+   
+</head>
+
+<body>
+
+    <nav>
+
+    <div class="drop-down">
+        <button class="drop-btn"><i class="fa-solid fa-location-dot"></i></button>
+        <div class="dropdown-content">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194473.42999466046!2d49.71487539548643!3d40.39450797992698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d6bd6211cf9%3A0x343f6b5e7ae56c6b!2z0JHQsNC60YMsINCQ0LfQtdGA0LHQsNC50LTQttCw0L0!5e0!3m2!1sru!2s!4v1667769267924!5m2!1sru!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    
+    <div class="drop-down1">
+        <button class="drop-btn1"><i class="fa-solid fa-clock"></i></button>
+        <div class="dropdown-content1">
+           <p>Hər Gün  <strong>10:00-20:00</strong> </p>
+        </div>
+    </div>
+
+
+ 
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa-solid fa-bars"></i>Bütün Kateqoriyalar</button>
+            <div class="dropdown-content">
+                <a href="#">Kişi Saatları</a>
+                <a href="#">Qadın Saatları</a>
+                <a href="#">Divar Saatları</a>
+            </div>
+        </div>
+        <a href="#Anasəhifə">Ana Səhifə</a>
+        <a href="#Scroll">Brend Mallar</a>
+        <a href="#Haqqında">Ən Çox Satılanlar</a>
+        <a href="#Əlaqə">Xüsusi Təkliflər</a>
+        <a href="#Xəbərlər">Kampaniyalar</a>
+        <a href="#Ünvan">Ünvan</a>
+    </nav>
+
+    <section id="Anasəhifə">
+        <div class="header">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo-new.png" alt="">
+
+                </a>
+            </div>
+            <div class="input">
+                <label for="">
+
+                    <input class="input-ada" type="text" name="" id="" placeholder="Axtar"><i
+                        class="fa-solid fa-magnifying-glass"></i>
+                </label>
+            </div>
+            <div class="tel">
+                <i class="fa-solid fa-mobile-retro"></i>
+                <p>+994558575697</p>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p> 0.00AZN </p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="" alt="">
+            <div class="card-body">
+                <h4 class="card-tittle"></h4>
+                <a href="" class="btn-primary">MORE IMG</a>
+            </div>
+        </div>
+        <script>
+            var models = [
+                {
+                    image: "images/Sayt banner 8 noyabr-2820x874.jpg",
+                },
+                {
+                    image: "images/saat.jpg",
+                },
+                {
+                    image: "images/uzun-banner-birkart-2820x874.jpg",
+                },
+                {
+                    image: "images/banner-musteri-2820x874.png",
+
+                },
+                {
+                    image: "images/fon.jpg",
+                }
+            ];
+            setInterval(function () {
+
+
+                var index =
+                    Math.floor(Math.floor(Math.random() * models.length));
+
+                var img = document.querySelector(".card-img-top");
+                var tittle = document.querySelector(".card-tittle");
+                var a = document.querySelector('a');
+
+                img.setAttribute('src', models[index].image);
+                a.setAttribute('href', models[index].link);
+                tittle.textcontent = models[index].name;
+            }, 2500);
+
+
+
+
+
+        </script>
+
+        <div class="boxes4">
+
+            <div class="box4-1">
+                <div class="hover-box">
+                </div>
+                <div class="div-icon">
+
+                    <i class="fa-solid fa-car"></i>
+                </div>
+                <div class="div-right">
+                    <h4>Operativ çatdırılma </h4>
+                    <p>Bakı daxili sifarişlərin 99%-i gün ərzində çatdırılır</p>
+                </div>
+
+            </div>
+            <div class="box4-1">
+                <div class="hover-box">
+                </div>
+                <div class="div-icon">
+                    <i class="fa-solid fa-credit-card"></i>
+                </div>
+                <div class="div-right">
+                    <h4>Operativ çatdırılma </h4>
+                    <p>Bakı daxili sifarişlərin 99%-i gün ərzində çatdırılır</p>
+                </div>
+            </div>
+            <div class="box4-1">
+                <div class="hover-box">
+                </div>
+                <div class="div-icon">
+                    <i class="fa-regular fa-comment"></i>
+                </div>
+                <div class="div-right">
+                    <h4>Operativ çatdırılma </h4>
+                    <p>Bakı daxili sifarişlərin 99%-i gün ərzində çatdırılır</p>
+                </div>
+            </div>
+            <div class="box4-1">
+                <div class="hover-box">
+                </div>
+                <div class="div-icon">
+                    <i class="fa-solid fa-shop"></i>
+                </div>
+                <div class="div-right">
+                    <h4>Operativ çatdırılma </h4>
+                    <p>Bakı daxili sifarişlərin 99%-i gün ərzində çatdırılır</p>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+
+
+    </section>
+    <div class="div-attack"></div>
+
+
+    <section id="Scroll">
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="scroll-content">
+                        <div class="scroll-img">
+                            <img src="images/bags.png" alt="">
+                        </div>
+                        <div class="scroll-text">
+                            <h3>Birkin 30 Taurillion Orange</h3>
+                            <p>20500 $</p>
+                            <button class="buttonBB">Ətraflı</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="scroll-content">
+                        <div class="scroll-img">
+                            <img src="images/watch scrol.png" alt="">
+                        </div>
+                        <div class="scroll-text">
+                            <h3>Birkin 30 Taurillion Orange</h3>
+                            <p>20500 $</p>
+                            <button class="buttonBB">Ətraflı</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="scroll-content">
+                        <div class="scroll-img">
+                            <img src="images/watch scroll1.png" alt="">
+                        </div>
+                        <div class="scroll-text">
+                            <h3>Birkin 30 Taurillion Orange</h3>
+                            <p>20500 $</p>
+                            <button class="buttonBB">Ətraflı</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="scroll-content">
+                        <div class="scroll-img">
+                            <img src="images/watch sc 3.png" alt="">
+                        </div>
+                        <div class="scroll-text">
+                            <h3>Birkin 30 Taurillion Orange</h3>
+                            <p>20500 $</p>
+                            <button class="buttonBB">Ətraflı</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+
+
+    <section id="Haqqında">
+        <div class="header-text">
+            <a class="text" href="#">Ən Çox Satılanlar</a>
+        </div>
+        <div class="down-boxes">
+            <div class="box1">
+                <div class="row">
+                    <div class="images">
+                        <div id="zoom-out">
+                            <figure>
+                                <img src="img/VT-00004090-200x200.jpg" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box1-text">
+                    <a href="#">
+                        G-SHOCK
+                    </a>
+                    <p>GA-2100VB-1ADR</p>
+                    <h4>239.00 AZN</h4>
+                </div>
+                <div class="div-say">
+                    <i class="fa-solid fa-minus"></i>
+                    <a href="#">1</a>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="div-btn">
+                    <button class="box1-btn">SƏBƏTƏ AT</button>
+
+                </div>
+            </div>
+            <div class="box1">
+                <div class="row">
+                    <div class="images">
+                        <div id="zoom-out">
+                            <figure>
+                                <img src="img/VT-00004090-200x200.jpg" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box1-text">
+                    <a href="#">
+                        G-SHOCK
+                    </a>
+                    <p>GA-2100VB-1ADR</p>
+                    <h4>239.00 AZN</h4>
+                </div>
+                <div class="div-say">
+                    <i class="fa-solid fa-minus"></i>
+                    <a href="#">1</a>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="div-btn">
+                    <button class="box1-btn">SƏBƏTƏ AT</button>
+
+                </div>
+            </div>
+            <div class="box1">
+                <div class="row">
+                    <div class="images">
+                        <div id="zoom-out">
+                            <figure>
+                                <img src="img/VT-00004090-200x200.jpg" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box1-text">
+                    <a href="#">
+                        G-SHOCK
+                    </a>
+                    <p>GA-2100VB-1ADR</p>
+                    <h4>239.00 AZN</h4>
+                </div>
+                <div class="div-say">
+                    <i class="fa-solid fa-minus"></i>
+                    <a href="#">1</a>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="div-btn">
+                    <button class="box1-btn">SƏBƏTƏ AT</button>
+
+                </div>
+            </div>
+            <div class="box1">
+                <div class="row">
+                    <div class="images">
+                        <div id="zoom-out">
+                            <figure>
+                                <img src="img/VT-00004090-200x200.jpg" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box1-text">
+                    <a href="#">
+                        G-SHOCK
+                    </a>
+                    <p>GA-2100VB-1ADR</p>
+                    <h4>239.00 AZN</h4>
+                </div>
+                <div class="div-say">
+                    <i class="fa-solid fa-minus"></i>
+                    <a href="#">1</a>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="div-btn">
+                    <button class="box1-btn">SƏBƏTƏ AT</button>
+
+                </div>
+            </div>
+            <!-- <div class="box1">
+                <div class="img">
+                    <img src="img/VT-00004090-200x200.jpg" alt="">
+                </div>
+                <div class="box1-text">
+                    <a href="#">
+                        G-SHOCK
+                    </a>
+                    <p>GA-2100VB-1ADR</p>
+                    <h4>239.00 AZN</h4>
+                </div>
+                <div class="div-say">
+                    <i class="fa-solid fa-minus"></i>
+                    <a href="#">1</a>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="div-btn">
+                    <button class="box1-btn">SƏBƏTƏ AT</button>
+
+                </div>
+            </div> -->
+            <div class="box1">
+                <div class="row">
+                    <div class="images">
+                        <div id="zoom-out">
+                            <figure>
+                                <img src="img/VT-00004090-200x200.jpg" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box1-text">
+                    <a href="#">
+                        G-SHOCK
+                    </a>
+                    <p>GA-2100VB-1ADR</p>
+                    <h4>239.00 AZN</h4>
+                </div>
+                <div class="div-say">
+                    <i class="fa-solid fa-minus"></i>
+                    <a href="#">1</a>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="div-btn">
+                    <button class="box1-btn">SƏBƏTƏ AT</button>
+
+                </div>
+            </div>
+
+
+    </section>
+
+
+    <section id="Əlaqə">
+        <div class="header-text">
+            <a class="text" href="#">Xusui Təklif</a>
+        </div>
+        <div class="down-boxes">
+            <div class="box2">
+                <div class="row">
+                    <div class="images">
+                        <div id="zoom-out">
+                            <figure>
+                                <img src="img/VT-00004090-200x200.jpg" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box2-text">
+                    <a href="#">SANTA BARBARA</a>
+                    <P>SB.1.10264-4
+                    </P>
+                    <h4>169.00 AZN</h4>
+                    <div class="div-say">
+                        <i class="fa-solid fa-minus"></i>
+                        <a href="#">1</a>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="div2-btn">
+                        <button class="box2-btn">SƏBƏTƏ AT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="row">
+                    <div class="images">
+                        <div id="zoom-out">
+                            <figure>
+                                <img src="img/VT-00004090-200x200.jpg" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box2-text">
+                    <a href="#">SANTA BARBARA</a>
+                    <P>SB.1.10264-4
+                    </P>
+                    <h4>169.00 AZN</h4>
+                    <div class="div-say">
+                        <i class="fa-solid fa-minus"></i>
+                        <a href="#">1</a>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="div2-btn">
+                        <button class="box2-btn">SƏBƏTƏ AT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="row">
+                    <div class="images">
+                        <div id="zoom-out">
+                            <figure>
+                                <img src="img/VT-00004090-200x200.jpg" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box2-text">
+                    <a href="#">SANTA BARBARA</a>
+                    <P>SB.1.10264-4
+                    </P>
+                    <h4>169.00 AZN</h4>
+                    <div class="div-say">
+                        <i class="fa-solid fa-minus"></i>
+                        <a href="#">1</a>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="div2-btn">
+                        <button class="box2-btn">SƏBƏTƏ AT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="row">
+                    <div class="images">
+                        <div id="zoom-out">
+                            <figure>
+                                <img src="img/VT-00004090-200x200.jpg" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box2-text">
+                    <a href="#">SANTA BARBARA</a>
+                    <P>SB.1.10264-4
+                    </P>
+                    <h4>169.00 AZN</h4>
+                    <div class="div-say">
+                        <i class="fa-solid fa-minus"></i>
+                        <a href="#">1</a>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="div2-btn">
+                        <button class="box2-btn">SƏBƏTƏ AT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="row">
+                    <div class="images">
+                        <div id="zoom-out">
+                            <figure>
+                                <img src="img/VT-00004090-200x200.jpg" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box2-text">
+                    <a href="#">SANTA BARBARA</a>
+                    <P>SB.1.10264-4
+                    </P>
+                    <h4>169.00 AZN</h4>
+                    <div class="div-say">
+                        <i class="fa-solid fa-minus"></i>
+                        <a href="#">1</a>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="div2-btn">
+                        <button class="box2-btn">SƏBƏTƏ AT</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+
+    <section class="xeberler" id="Xəbərlər">
+        <div class="row">
+            <div class="image">
+                <div id="zoom-out">
+                    <figure>
+                        <img src="images/rolex2.jpg" alt="">
+                    </figure>
+                    <h3>MEN'S WATCHES</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="image">
+                <div id="zoom-out">
+                    <figure>
+                        <img src="images/rolex.jpg" alt="">
+                    </figure>
+                    <h3>MEN'S WATCHES</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="image">
+                <div id="zoom-out">
+                    <figure>
+                        <img src="images/rolex4.jpg" alt="">
+                    </figure>
+                    <h3>MEN'S WATCHES</h3>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="image">
+                <div id="zoom-out">
+                    <figure>
+                        <img src="images/watch.jpg" alt="">
+                    </figure>
+                    <h3>MEN'S WATCHES</h3>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="image">
+                <div id="zoom-out">
+                    <figure>
+                        <img src="images/rolex666.webp" alt="">
+                    </figure>
+                    <h3>MEN'S WATCHES</h3>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="image">
+                <div id="zoom-out">
+                    <figure>
+                        <img src="images/rolex.xxjpg.webp" alt="">
+                    </figure>
+                    <h3>MEN'S WATCHES</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="Ünvan">
+        <div class="loc-head">
+            <div class="icon-head">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="text-head">
+                Promosyonlar və endirimlər haqqında ilk bilmək<br>
+                istəyirsiniz?<br>
+                Poçt siyahımıza abunə ol
+            </div>
+
+            <div class="input-head">
+                <label for="">
+                    <input class="input-end" type="email" placeholder="E-mailinzi daxil edin">
+                </label>
+                <button class="btn-head">Abunə Ol</button>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="loc-medium">
+            <div class="medium-head">
+                <h2>Məlumat</h2>
+            </div>
+            <div class="div">
+                <div class="medium-down">
+                    <a href="#">Əlaqə</a>
+                    <a href="#">Geri qaytarma</a>
+                    <a href="#">Sayt xəritəsi</a>
+                    <a href="#">Brendlər</a>
+                    <a href="#">Hədiyyə kartları</a>
+                    <a href="#">Xüsusi təkliflər</a>
+
+                </div>
+
+                <div class="div-1">
+                    <a href="#">Kişi</a>
+                    <a href="#">Qadın</a>
+                    <a href="#">Cüzdanlar</a>
+                    <a href="#">Divar Saatı</a>
+                </div>
+
+                <div class="div-2">
+                    <div class="div-2icon">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="divp">
+                        <p>Hər gün 10:00 - 20:00 </p>
+                        <div class="icons">
+                            <i class="fa-brands fa-facebook fb"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+
+                    </div>
+                    <div class="icons">
+                    </div>
+                </div>
+
+                <div class="div-3">
+                    <div class="div-line">
+                        <a href="#">+994504562436</a>
+                        <a href="#">Baku@saatstore.az</a>
+                    </div>
+
+                    <p>Ünvan: 28 may Fikrət Əmirov 24<br>
+                        (Perron Gallery 2-ci mərtəbə)<br>
+                        Ünvan: 28 may küç, 28 (23 saylı<br>
+                        məktəbin yanı)</p>
+                </div>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194473.42999466046!2d49.71487539548643!3d40.39450797992698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d6bd6211cf9%3A0x343f6b5e7ae56c6b!2z0JHQsNC60YMsINCQ0LfQtdGA0LHQsNC50LTQttCw0L0!5e0!3m2!1sru!2s!4v1667769267924!5m2!1sru!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="loc-end">
+
+        </div>
+
+
+
+    </section>
+
+    <div class=top>
+        <a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a>
+    </div>
+
+
+    <div class="medium">
+        <div class="top1">
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="top2">
+            <i class="fa-solid fa-hashtag"></i>
+        </div>
+
+        <div class="top3">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" lang="Javascript" src="main.js"></script>
+</body>
+
+</html>

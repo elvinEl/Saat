@@ -1,0 +1,962 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    scroll-behavior: smooth;
+ 
+
+}
+
+body {
+    padding-top: 50px;
+    background-color: #F2F3F5;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    background-color: #353e48;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav a:hover {
+    color: lime;
+    background-color: rgb(96, 95, 95);
+    transition: 500ms;
+}
+
+nav a {
+    line-height: 50px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 0 35px;
+}
+
+section {
+    height: calc(100vh - 50px);
+}
+
+#Anasəhifə {
+    scroll-margin: 50px;
+    width: 75%;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+#Haqqında {
+    scroll-margin: 50px;
+    position: relative;
+
+
+}
+
+
+
+#Əlaqə {
+    scroll-margin: 50px;
+}
+
+#Ünvan {
+    scroll-margin: 50px;
+    background-color: #6c757d;
+}
+
+.xeberler {
+    height: 120vh;
+}
+
+
+.top {
+    position: relative;
+    bottom: 9px;
+    right: 5px;
+    color: white;
+    position: fixed;
+    text-decoration: none;
+
+
+}
+
+.top i {
+    cursor: pointer;
+    font-size: 50px;
+    color: #0054af;
+}
+
+/* haqqinda */
+#Haqqında .text {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #30363D;
+    position: absolute;
+    top: 3rem;
+    left: 9rem;
+}
+
+#Scroll {
+    scroll-margin: 50px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+#Haqqında .text:hover {
+    text-decoration: underline;
+}
+
+/* haqqinda boxes */
+#Haqqında .down-boxes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 485px;
+    width: 80%;
+    margin: 10px;
+    margin: 0 auto;
+    /* z-index: -10; */
+    position: absolute;
+    top: 7rem;
+    left: 8.6rem;
+}
+
+#red {
+    background-color: rgb(39, 91, 169);
+    margin-right: 25px;
+}
+
+#red:hover {
+    background-color: #4a4a4a;
+    color: white;
+}
+
+.box1 {
+    background-color: white;
+    margin: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.box1:hover .box1-btn {
+    background-color: #007bff;
+    transition: 500ms;
+
+}
+
+.box1:hover a {
+    color: #007bff;
+    transition: 500ms;
+}
+
+.box1:hover img {
+    opacity: 0.8;
+    transition: 500ms;
+
+}
+
+.img img {
+    margin-top: 45px;
+    margin-left: 15px;
+}
+
+.box1-text {
+    text-align: center;
+    line-height: 2;
+}
+
+.box1-btn {
+    width: 90%;
+    padding: 0.5rem;
+    background-color: #6c757d;
+    color: white;
+    cursor: pointer;
+    font-size: inherit;
+}
+
+.div-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.box1-text>a {
+    font-size: 22px;
+    color: #333;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* ----------------#HAQQINDA BURDA YEKUNLASIN---------- */
+
+/* ------------#ANA SEHIFE------------- */
+
+.boxes4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    margin-top: 15px;
+
+}
+
+.boxes4 p {
+    font-size: 14px;
+    color: rgb(175, 175, 175);
+    background-color: white;
+
+}
+
+.box4-1 {
+    position: relative;
+    display: flex;
+    background-color: white;
+    margin: 5px;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 1px 5px 0px;
+
+}
+
+.div-icon i {
+    font-size: 40px;
+    color: rgb(39, 91, 169);
+    margin-top: 6px;
+    line-height: 1.3;
+}
+
+.hover-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 6px;
+    height: 100%;
+    background-color: black;
+    transition: 1s;
+
+}
+
+.box4-1:hover .hover-box {
+    display: block;
+}
+
+/* -------------HEADER LOGO----------- */
+.logo img {
+    display: inline;
+    height: 80px;
+}
+
+.logo {
+    display: inline;
+}
+
+.header {
+    display: flex;
+    margin: 15px;
+}
+
+.input-ada {
+    height: 2rem;
+    width: 25rem;
+    margin: 35px 15px;
+    border: none;
+
+}
+
+label {
+    position: relative;
+}
+
+label>i {
+    position: absolute;
+    top: 3px;
+    right: 20px;
+    color: #CBCFD4;
+    cursor: pointer;
+}
+
+label>i:hover {
+    color: #007bff;
+}
+
+.tel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.tel>i {
+    font-size: 30px;
+    color: #CBCFD4;
+}
+
+.tel>i:hover {
+    color: #007bff;
+}
+
+.tel>p {
+    margin: 0 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+
+/* ------------JAVA SCRIPT---------- */
+.card-img-top {
+    width: 90%;
+    margin: 0 auto;
+    height: 400px;
+    margin-top: 1.5rem;
+}
+
+.btn-primary {
+    display: none;
+}
+
+/* ----------------------------------------- */
+/* MEDIUM BURDA BASLAYIB */
+.medium {
+    position: fixed;
+    top: 15rem;
+    /* bottom: 25rem; */
+    right: 0rem;
+    /* width: 60px; */
+    background-color: #343e48;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    line-height: 3;
+    color: white;
+}
+
+.top1 {
+    padding: 15px;
+}
+
+.top2 {
+    padding: 15px;
+}
+
+.top3 {
+    padding: 15px;
+}
+
+.top1:hover {
+    background-color: #007bff;
+}
+
+.top2:hover {
+    background-color: #007bff;
+}
+
+.top3:hover {
+    background-color: #007bff;
+}
+
+/* -------------------------------------------- */
+
+/* ELAQE BURDAN BASLAYIR----------------- */
+
+#Əlaqə .text {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #30363D;
+    position: absolute;
+    top: 3rem;
+    left: 9rem;
+}
+
+#Əlaqə {
+    position: relative;
+}
+
+#Əlaqə .text:hover {
+    text-decoration: underline;
+}
+
+#Əlaqə .down-boxes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 485px;
+    width: 80%;
+    margin: 10px;
+    margin: 0 auto;
+    /* z-index: -10; */
+    position: absolute;
+    top: 7rem;
+    left: 8.6rem;
+}
+
+.box2 {
+    background-color: white;
+    margin: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.box2:hover .box2-btn {
+    background-color: #007bff;
+    transition: 500ms;
+
+}
+
+.box2:hover a {
+    color: #007bff;
+    transition: 500ms;
+
+}
+
+.box2:hover img {
+    transition: 500ms;
+
+    opacity: 0.8;
+}
+
+.box2-img img {
+    margin-top: 45px;
+    margin-left: 15px;
+}
+
+.box2-text {
+    text-align: center;
+    line-height: 2;
+}
+
+.box2-btn {
+    width: 90%;
+    padding: 0.5rem;
+    background-color: #6c757d;
+    color: white;
+    cursor: pointer;
+    font-size: inherit;
+}
+
+.div2-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.box2-text>a {
+    font-size: 22px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* unvan burda baslayir---------------------- */
+.icon-head i {
+    font-size: 65px;
+    color: #007bff;
+    padding: 10px;
+}
+
+.loc-head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.text-head {
+    padding: 10px;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+.btn-head {
+    padding: 10px;
+    background-color: #007bff;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.input-end {
+    padding: 10px;
+    width: 30rem;
+}
+
+.line {
+    height: 1px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.medium-head {
+    font-size: 16px;
+    line-height: 5;
+    width: 80%;
+    margin: 0 auto;
+    color: #CBCFD4;
+}
+
+.medium-down {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+
+.medium-down a {
+    text-decoration: none;
+    color: #CBCFD4;
+}
+
+.medium-down a:hover {
+    text-decoration: underline;
+    color: #0054af;
+    transition: 500ms;
+}
+
+.div {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.div-1 {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+
+.div-1 a {
+    text-decoration: none;
+    color: #CBCFD4;
+}
+
+.div-1 a:hover {
+    text-decoration: underline;
+    color: #0054af;
+    transition: 500ms;
+}
+
+.div-2 {
+    display: flex;
+}
+
+.div-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-line a {
+    color: #CBCFD4;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+iframe {
+    height: 255px;
+    width: 500px;
+
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    align-items: center;
+
+}
+
+.icons>i {
+    background-color: rgba(203, 207, 212, 0.22);
+    padding: 5px;
+}
+
+.icons>.fb:hover {
+    background-color: #2851A3;
+    transition: 500ms;
+}
+
+.icons>.fa-instagram:hover {
+    background-color: #e83e8c;
+    transition: 500ms;
+}
+
+.icons>.fa-youtube:hover {
+    background-color: #dc3545;
+}
+
+.div-2icon i {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    color: rgba(203, 207, 212, 0.22);
+    align-items: flex-start;
+}
+
+.divp {
+    margin: 0 10px;
+}
+
+.divp p {
+
+    margin-top: 10px;
+    color: antiquewhite;
+    font-size: 14px;
+}
+
+.img-sec img {
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+}
+
+/* -----------------------XEBERLER --------------- */
+
+#Xəbərlər {
+    width: 75%;
+    margin: 0 auto;
+
+}
+
+.xeberler {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.image img {
+    height: 400px;
+    width: 100%;
+    display: block;
+    border-radius: 25px;
+}
+
+.images img {
+    display: block;
+    border-radius: 25px;
+}
+
+.image {
+    display: inline-block;
+}
+
+figure {
+    overflow: hidden;
+    margin: 0 3px;
+    border-radius: 25px;
+}
+
+figure:hover {
+    border-radius: 25px;
+
+}
+
+.image #zoom-out figure img {
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+}
+
+.image #zoom-out figure:hover img {
+    transform: scale(1.2);
+}
+
+.images #zoom-out figure img {
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+    margin-top: 48px;
+}
+
+.images #zoom-out figure:hover img {
+    transform: scale(1.2);
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+
+/* ---------------DROPDOWN BUTTON------------ */
+.dropbtn {
+    background-color: rgba(65, 129, 255, 1);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 207px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: rgba(65, 129, 255, 1);
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(10, 76, 208);
+}
+
+.dropdown i {
+    padding: 0 10px;
+}
+
+.div-say {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.div-say i {
+    padding: 10px;
+    background-color: #AFAFAF;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.div-say i:hover {
+    background-color: rgb(39, 91, 169);
+    transition: 500ms;
+}
+
+.div-say a {
+    text-decoration: none;
+}
+
+/* -------------------------------------------------------------- */
+
+.div-attack {
+    background-image: url(images/rolex\ hall.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+/* =================SCROLL================ */
+.scroll-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-img img {
+    font-size: 20px;
+}
+
+.scroll-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 3;
+}
+
+.buttonBB {
+    padding: 10px;
+    background-color: white;
+    color: chocolate;
+    font-weight: 600;
+    border-radius: 25px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 60%;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.scroll-text h3 {
+    font-size: 20px;
+}
+
+.scroll-text p {
+    font-size: 1.5625rem;
+    font-weight: 700;
+    color: chocolate;
+}
+
+/* =================================================== */
+.swiper {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/bg.svg);
+
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background-image: url(images/bg.svg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.swiper-slide img {
+    display: block;
+    width: 75%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/* =================================== */
+.drop-btn {
+    background-color: #353e48;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-right: 1px solid rgb(73, 73, 73);
+}
+
+.drop-down {
+    position: absolute;
+    left: 5px;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.drop-down:hover .dropdown-content {
+    display: block;
+}
+
+.drop-down:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/* ==============================SAAT============ */
+.drop-btn1 {
+    background-color: #353e48;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-right: 1px solid rgb(73, 73, 73);
+}
+
+.drop-down1 {
+    position:absolute;
+    left: 52px;
+    display: inline-block;
+}
+
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+.dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content1 a:hover {
+    background-color: #f1f1f1
+}
+
+.drop-down1:hover .dropdown-content1 {
+    display: block;
+}
+
+.drop-down1:hover .dropbtn1 {
+    background-color: #3e8e41;
+}
